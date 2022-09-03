@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-  const nuevaString = "Hola";
+  const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 10;
@@ -48,7 +48,8 @@ function resta(x, y) {
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
-  // Tu código: const total x*y;
+  // Tu código: 
+  const total = x*y;
   return total;
 }
 
@@ -95,7 +96,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var b = x % y;
+  var resto = x % y;
   return resto;
 }
 
@@ -103,8 +104,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  var resto = num % 2;
-  if (num === 0) {return true;}
+  if (num % 2 === 0) {return true;}
   else {return false;}
 }
 
@@ -121,42 +121,42 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  Math.pow(num ** 2);
+  var potencia = Math.pow(num, 2);
   return potencia;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  Math.pow(num ** 3);
+  var potencia = num ** 3;
   return potencia;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  Math.pow(num ** exponent);
+   var potencia = Math.pow(num, exponent);
   return potencia;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  Math.round(num,1);
+  var redondeado = Math.round(num, 1);
   return redondeado;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  Math.ceil(num,0)
+  var redondeado = Math.ceil(num, 0)
   return  redondeado;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var numero = Math.random 
+  var numero = Math.random()
   return numero;
 }
 
@@ -189,7 +189,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var nuevaStr = nombre + " " + apellido;
+  var nuevaStr = nombre + ' ' + apellido;
   return nuevaStr;
 }
 
@@ -197,7 +197,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var frase = "hola " + nombre + "!";
+  var frase = 'Hola ' + nombre + '!';
   return frase;
 }
 
